@@ -17,13 +17,7 @@ fn panic(info: &PanicInfo) -> !{
         location.file(),
         location.line(),
         info.message().unwrap());
-        // error!("Panicked at {}:{} {}",
-        // location.file(),
-        // location.line(),
-        // info.message().unwrap());
     } else {
-        // log!(LogLevel::ERROR, "Panicked at {}:{} {}",
-        // info.message().unwrap())
         log!(klog::LOG_LEVEL_ERROR, "Panicked at {}",
             info.message().unwrap());
     }

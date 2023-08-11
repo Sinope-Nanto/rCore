@@ -44,8 +44,8 @@ pub fn console_put_char(c: usize){
 }
 
 pub fn shutdown() -> !{
-    // sbi_call(SRST_EXTENSION, SBI_SHUTDOWN, 0, 0, 0);
-    // panic!("It should shutdown!");
-    log!(klog::LOG_LEVEL_DEBUG, "machine should be stopped!");
-    loop{}
+    sbi_call(SRST_EXTENSION, SBI_SHUTDOWN, 0, 0, 0);
+    panic!("It should shutdown!");
+    // log!(klog::LOG_LEVEL_DEBUG, "machine should be stopped!");
+    // loop{}
 }

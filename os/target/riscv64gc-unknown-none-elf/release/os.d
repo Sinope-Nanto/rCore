@@ -1,1 +1,0 @@
-/mnt/d/code/rust_code/rCore/os/target/riscv64gc-unknown-none-elf/release/os: /mnt/d/code/rust_code/rCore/os/src/console.rs /mnt/d/code/rust_code/rCore/os/src/entry.asm /mnt/d/code/rust_code/rCore/os/src/klog.rs /mnt/d/code/rust_code/rCore/os/src/lang_items.rs /mnt/d/code/rust_code/rCore/os/src/main.rs /mnt/d/code/rust_code/rCore/os/src/sbi.rs

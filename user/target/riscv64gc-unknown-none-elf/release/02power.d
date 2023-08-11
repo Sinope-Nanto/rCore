@@ -1,1 +1,0 @@
-/mnt/d/code/rust_code/rCore/user/target/riscv64gc-unknown-none-elf/release/02power: /mnt/d/code/rust_code/rCore/user/src/bin/02power.rs /mnt/d/code/rust_code/rCore/user/src/console.rs /mnt/d/code/rust_code/rCore/user/src/lang_items.rs /mnt/d/code/rust_code/rCore/user/src/lib.rs /mnt/d/code/rust_code/rCore/user/src/syscall.rs

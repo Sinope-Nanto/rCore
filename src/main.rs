@@ -5,6 +5,8 @@
 mod console;
 mod lang_items;
 mod sbi;
+mod klog;
+use klog::*;
 
 
 use core::arch::global_asm;
@@ -13,7 +15,9 @@ global_asm!(include_str!("entry.asm"));
 #[no_mangle]
 pub fn rust_main() -> ! {
     clear_bss();
-    info!("Hello world!");
+    // info!("Hello world!");
+    Logger::logger_init();
+    log!(LOG_LEVEL_INFO, "hello world!");
     panic!("Shutdown machine!");
 }
 

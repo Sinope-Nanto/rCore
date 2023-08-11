@@ -15,8 +15,13 @@ const SBI_SHUTDOWN: usize = 0;
 
 use core::arch::asm;
 
-use crate::println;
+use crate::log;
+use crate::klog;
+use crate::error;
+use crate::warning;
+use crate::info;
 use crate::debug;
+use crate::trace;
 
 #[inline(always)]
 fn sbi_call(eid: usize, fid: usize, arg0: usize, arg1: usize, arg2: usize) -> usize {
@@ -41,6 +46,6 @@ pub fn console_put_char(c: usize){
 pub fn shutdown() -> !{
     // sbi_call(SRST_EXTENSION, SBI_SHUTDOWN, 0, 0, 0);
     // panic!("It should shutdown!");
-    debug!("machine should be stopped!");
+    log!(klog::LOG_LEVEL_DEBUG, "machine should be stopped!");
     loop{}
 }

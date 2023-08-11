@@ -1,0 +1,1 @@
+/mnt/d/code/rust_code/rCore/user/target/riscv64gc-unknown-none-elf/release/00hello_world: /mnt/d/code/rust_code/rCore/user/src/bin/00hello_world.rs /mnt/d/code/rust_code/rCore/user/src/console.rs /mnt/d/code/rust_code/rCore/user/src/lang_items.rs /mnt/d/code/rust_code/rCore/user/src/lib.rs /mnt/d/code/rust_code/rCore/user/src/syscall.rs

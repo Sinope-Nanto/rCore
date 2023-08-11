@@ -1,0 +1,11 @@
+/mnt/d/code/rust_code/rCore/user/target/release/deps/semver_parser-6232b83b7fcd1ac5.rmeta: /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/lib.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/version.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/range.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/common.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/recognize.rs
+
+/mnt/d/code/rust_code/rCore/user/target/release/deps/libsemver_parser-6232b83b7fcd1ac5.rlib: /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/lib.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/version.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/range.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/common.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/recognize.rs
+
+/mnt/d/code/rust_code/rCore/user/target/release/deps/semver_parser-6232b83b7fcd1ac5.d: /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/lib.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/version.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/range.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/common.rs /home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/recognize.rs
+
+/home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/lib.rs:
+/home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/version.rs:
+/home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/range.rs:
+/home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/common.rs:
+/home/nanto/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/semver-parser-0.7.0/src/recognize.rs:

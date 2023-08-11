@@ -1,0 +1,1 @@
+/mnt/d/code/rust_code/rCore/user/target/riscv64gc-unknown-none-elf/release/03priv_inst: /mnt/d/code/rust_code/rCore/user/src/bin/03priv_inst.rs /mnt/d/code/rust_code/rCore/user/src/console.rs /mnt/d/code/rust_code/rCore/user/src/lang_items.rs /mnt/d/code/rust_code/rCore/user/src/lib.rs /mnt/d/code/rust_code/rCore/user/src/syscall.rs

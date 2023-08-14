@@ -8,7 +8,6 @@ mod sbi;
 mod klog;
 use klog::*;
 
-
 use core::arch::global_asm;
 global_asm!(include_str!("entry.asm"));
 global_asm!(include_str!("link_app.S"));

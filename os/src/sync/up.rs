@@ -1,13 +1,13 @@
 use core::cell::{RefCell, RefMut};
 
 pub struct UPSafeCell <T>{
-    inner : RefCell <T>,
+    pub inner : RefCell <T>,
 }
 
-unsafe impl<T> Sync for UPSafeCell<T> {};
+unsafe impl<T> Sync for UPSafeCell<T> {}
 
 impl<T> UPSafeCell<T>{
-    pub unsafe new(value: T) -> Self{
+    pub unsafe fn new(value: T) -> Self{
         Self {inner: RefCell::new(value)}
     }
 

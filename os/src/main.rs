@@ -7,6 +7,10 @@ mod lang_items;
 mod sbi;
 mod klog;
 use klog::*;
+pub mod batch;
+mod sync;
+pub mod trap;
+pub mod syscall;
 
 use core::arch::global_asm;
 global_asm!(include_str!("entry.asm"));
@@ -29,17 +33,20 @@ pub fn rust_main() -> ! {
     clear_bss();
     Logger::logger_init();
 
-    println!("[kernel] Hello, world!");
-    log!(LOG_LEVEL_INFO,"[kernel] .text [{:#x}, {:#x})",
+    log!(klog::LOG_LEVEL_INFO, "[kernel] Hello, world!");
+    log!(klog::LOG_LEVEL_INFO,"[kernel] .text [{:#x}, {:#x})",
         stext as usize, etext as usize);
-    log!(LOG_LEVEL_INFO,"[kernel] .rodata [{:#x}, {:#x})",
+    log!(klog::LOG_LEVEL_INFO,"[kernel] .rodata [{:#x}, {:#x})",
         srodata as usize, erodata as usize);
-    log!(LOG_LEVEL_INFO, "[kernel] .data [{:#x}, {:#x})",
+    log!(klog::LOG_LEVEL_INFO, "[kernel] .data [{:#x}, {:#x})",
         sdata as usize, edata as usize);
-    log!(LOG_LEVEL_INFO, "[kernel] boot_stack top=bottom={:#x}, lower_bound={:#x}",
+    log!(klog::LOG_LEVEL_INFO, "[kernel] boot_stack top=bottom={:#x}, lower_bound={:#x}",
         boot_stack_top as usize, boot_stack_lower_bound as usize);
-    log!(LOG_LEVEL_INFO, "[kernel] .bss [{:#x}, {:#x})", 
-        sbss as usize, ebss as usize);    
+    log!(klog::LOG_LEVEL_INFO, "[kernel] .bss [{:#x}, {:#x})", 
+        sbss as usize, ebss as usize);
+    trap::init();
+    batch::init();   
+    batch::execute_next_app();
     panic!("Shutdown machine!");
 }
 

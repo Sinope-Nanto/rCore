@@ -45,7 +45,7 @@ impl Logger{
 #[macro_export]
 macro_rules! log{
     ($level: expr, $fmt: literal $(, $($arg: tt)+)?) => {
-        if $level >= *LOG_FILTER{
+        if $level >= *klog::LOG_FILTER{
             match $level {
                 klog::LOG_LEVEL_ERROR => error!($fmt $(, $($arg)+)?),
                 klog::LOG_LEVEL_WARN => warning!($fmt $(, $($arg)+)?),

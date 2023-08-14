@@ -9,6 +9,7 @@ use crate::warning;
 use crate::info;
 use crate::debug;
 use crate::trace;
+use crate::LOG_FILTER;
 
 #[panic_handler]
 fn panic(info: &PanicInfo) -> !{
